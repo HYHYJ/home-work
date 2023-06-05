@@ -1,0 +1,21 @@
+.validation-list {
+
+}
+
+.validation-list li {
+  background: url(./images/validation_icon\ 2.png) no-repeat 7% 50%;
+  list-style-type: none;
+  background-color: lightgray;
+  height: 33px;
+  width: 250px;
+  margin: 12px 5px;
+  border-radius: 20px;
+  padding: 8px 0 0 30px
+}
+
+.validation-list a {
+  display: block;
+  text-decoration: none;
+  color : black;
+  margin-left: 10px;
+}
