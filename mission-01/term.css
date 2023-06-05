@@ -7,42 +7,53 @@ section{
   padding: 16px;
 }
 
+
 h1{
   font-weight: 800;
   font-size: 17px;
-  margin-bottom: 16px;
+  margin: 8px 0 18px;
 }
+
+dl {
+  margin-top: 20px;
+}
+
 dt, dd {
-  font-size: 14px;
-
-
+  font-size: 15px;
 }
+
 
 dt{
   color: rgba(23, 83, 161, 0.742);
   font-weight : 800;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+.dd1 .dd2 {
+  line-height: 1.6;
+  
 }
 
 dd {
   margin-inline-start:0%;
-  line-height: 1.6;
+  
 }
+
+.dt1 {
+  margin-left: 75px;
+}
+
 
 .image1 {
   float: left;
   margin-right: 16px;
-  display: inline;
+  margin-top : -20px
 }
 
 .image2 {
   float: right;
   margin-left: 16px;
-
-}
-
-.web-standards-group2 {
-  margin-top: 20px;
+  margin-top : -20px
 }
 
 
