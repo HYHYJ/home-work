@@ -1,4 +1,4 @@
-dl{
+section{
   width: 250px;
   height: 259px;
   background: linear-gradient( to bottom, rgb(208, 203, 203), rgb(241, 237, 237) );
@@ -14,7 +14,8 @@ h1{
 }
 dt, dd {
   font-size: 14px;
-  display: block;
+
+
 }
 
 dt{
@@ -30,14 +31,19 @@ dd {
 
 .image1 {
   float: left;
-  margin-right: 16px;}
+  margin-right: 16px;
+  display: inline;
+}
 
 .image2 {
   float: right;
   margin-left: 16px;
+
 }
 
 .web-standards-group2 {
   margin-top: 20px;
 }
+
+
 
