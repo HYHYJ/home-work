@@ -68,7 +68,7 @@
 <br />
 
 + 가장 큰 박스 설정
-  + hover하면 화면이 늘어나기 위해  height: auto; 값을 주었다.
+  + hover하면 화면이 늘어나기 위해  'height: auto;'값을 주었다.
 ```css
 /* 가장 큰 회색 박스 */
 .transition-group{
@@ -86,7 +86,9 @@
 <br />
 
 + hover로 늘어나는 박스 설정
-  + transition (애니메이션)을 위해 hover을 올리는 박스에 transition: all 300ms ease-in-out;를 주었다.
+  + transition (애니메이션)을 위해 hover을 올리는 박스에 'transition'을 주었다.
+  + 높이가 늘어나기위해 'height 300ms ease-in-out' 를 설정했다.
+  + 하얀색 박스가 펼쳐져 &lt;a&gt;링크들이 보일때 시간에 딜레이되며 내려와 'padding-top 300ms 400ms ease-in-out;'를 설정했다.
 
 ```css
 /* 하얀색 서브 박스 */
@@ -97,7 +99,7 @@
   border: 1px solid #A3A3A3;
   border-radius: 5px;
   overflow: hidden;
-  transition: all 300ms ease-in-out;
+  transition: height 300ms ease-in-out, padding-top 300ms 400ms ease-in-out;
   
 }
 ```
@@ -106,7 +108,7 @@
 
 + transition-box, hover 애니메이션 설정
     + .transition-box:hover: 마우스를 올려 화면의 크기를 변화시킨다.
-    + height: 145px; : 마우스가 올라갔을때 화면 크기를 늘린다.
+    + 'height: 145px; : 마우스가 올라갔을때 화면 크기를 늘린다.
     + padding-top: 10px; : 글자를 아래로 내리기 위해 box에 패딩을 준다.
 ```css
 /* 마우스를 올렸을 때 애니메이션(transition) */
@@ -120,7 +122,7 @@
 <br />
 
 + &lt;ul&gt; ,&lt;a&gt;설정
-  + &lt;ul&gt;에 list의 기본값을 없애기위해 list-style-type: none 를 설정한다.
+  + &lt;ul&gt;에 list의 기본값을 없애기위해 'list-style-type: none' 를 설정한다.
   + &lt;a&gt;에 inline-block을 주어서 margin값을 설정한다.
 ```css
 .link-list {
