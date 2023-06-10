@@ -140,6 +140,6 @@
 ---
 <br />
 
-> html 문법 검사
+### 4. html 문법 검사
 
 <img src="./mission-3-3.png" width="600px">
