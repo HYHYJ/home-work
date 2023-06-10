@@ -1,5 +1,5 @@
 # Transition 과제 (6/9)
-> 구현화면
+### 1. 구현화면
 + closed 상태
   
   <img src="./mission-3-2.png" width="300px">
@@ -8,7 +8,7 @@
   
   <img src="./mission-3-1.png" width="300px">
 
-> HTML
+### 2. HTML
  
 + section> h2 + ( div > ul > li * 5 >a )
   +  &lt;h1&gt;제목은 사이트 제목이라고 생각해 ***&lt;h2&gt;*** 제목을 주었다.
@@ -40,7 +40,7 @@
   </body>
 </html>
 ```
->CSS
+### 3. CSS
 + 기본 설정 
   + 글자크기, 두께, 색, margin, padding
 ```css
