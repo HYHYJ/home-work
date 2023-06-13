@@ -1,39 +1,39 @@
+/* 전체 폰트 사이즈 설정 */
 * {
   font-size: 14px;
   
 }
-
+/* 결과물이 잘보이기 위해 margin*/
 body {
   margin: 30px;
 }
-
+/* h2 제목 설정(글자,margin) */
 .header {
   color: orangered;
-  display: block;
-  margin: 0 0 0 19px;
   font-weight: 900;
+  margin: 0 0 0 19px;
 }
-
+/* 더보기 링크 설정*/
 .plus {
-  text-decoration: none;
-  color: black;
   display: block;
+  color: black;
   font-weight: 700;
+  text-decoration: none;
   margin: auto 0;
-  
 }
+/* 구분선 */
 .hr {
   height: 2px;
   width: 340px;
-  background : linear-gradient(to right, gray, rgba(255, 255, 255, 0.893));
   margin: 0px auto;
+  background : linear-gradient(to right, #A9A9A9, #FFFFFF);
 }
-
+/* img, figcapton 그룹 설정 */
 .img-box {
   max-width: 153px;
   margin:0;
 }
-
+/* figcaption 설정 */
 .img-box figcaption {
   display: block;
   margin: 0 auto ;
@@ -42,31 +42,31 @@ body {
   text-align: center;
   transform: translateY(-20px) translateX(25px);
 }
+/* time 설정 */
 .time {
   display: block;
 }
-
+/* news 제목 설정 */
 .news-info span{
   display: block;
   font-weight: bold;
-  
 }
 
 
-/* 그리드 배치 */
+/* 그리드 배치 (수작업ver, 편한 작업ver)*/
 .news-group {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   gap: 12px;
   max-width: 430px;
+  /* grid 편한 ver */
   /* grid-template-areas: 
   "head head . . . . . plus"
-  "hr . . . . ."
-  "img img img news news news news news"
+  "hr hr hr hr hr hr hr hr"
   "img img img news news news news news"; */
 }
-
+/* grid 수작업 ver */
 .header {
   grid-area: 1/1/2/3;
 }
@@ -87,6 +87,8 @@ body {
 .plus{
   grid-area:1/8/2/9;
 }
+
+/* grid 편한 ver */
 /* 
 .header {
   grid-area: head;
