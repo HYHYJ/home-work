@@ -1,0 +1,88 @@
+/* 시각적으로 잘 볼수있게했다. */
+body {
+  margin: 50px;
+}
+/* 인기 사이트 섹션 */
+.favorite-section {
+  position: relative;
+  width: 190px;
+  height: 147px;
+  background: linear-gradient(180deg, #CCCCCC, #EEEEEE);
+  border: 1px solid #A3A3A3;
+  border-radius: 5px;
+  padding: 12px;
+}
+/* 인기 사이트 제목 */
+.favorite-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+/* primary color */
+.orange {
+  color: orangered;
+}
+/* 더보기 (absolute 사용) */
+.plus {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* <ol> 리스트 */
+.favorite-listGroup {
+  font-size: 12px;
+  font-weight: 500;
+  list-style-type: none;
+  margin-top: 4px;
+  padding: 0;
+}
+/* 전체 list에 공통 아이콘 sprite 설정 */
+.sprite {
+  margin-top: 13px;
+  background: url(./rank.png) no-repeat 0 center;
+  
+}
+/* 각 list sprite 설정 (background-position)*/
+.sprite-1{
+  background-position: 100% 3px ;
+}
+.sprite-2{
+  background-position: 100% -41px ;
+}
+.sprite-3{
+  background-position: 100% -18.5px ;
+}
+.sprite-4{
+  background-position: 100% 3px ;
+}
+
+/* 리스트 앞에 공통 번호 박스 (::before)*/
+.sprite::before {
+  content: "";
+  text-align: center;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #A3A3A3;
+  border-radius: 5px;
+  margin-right: 4px;
+  color: white;
+  font-size: 11px;
+} 
+/* 리스트 각각 숫자 */
+.sprite-1::before {
+  content: "1";
+}
+.sprite-2::before {
+  content: "2";
+}
+.sprite-3::before {
+  content: "3";
+}
+.sprite-4::before {
+  content: "4";
+}
