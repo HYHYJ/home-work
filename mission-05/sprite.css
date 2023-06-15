@@ -44,6 +44,8 @@ body {
 .sprite {
   margin-top: 13px;
   background: url(./rank.png) no-repeat 0 center;
+  /* li의 순서를 기억한다 */
+  counter-increment: number ;
   
 }
 /* 각 list sprite 설정 (background-position)*/
@@ -62,7 +64,8 @@ body {
 
 /* 리스트 앞에 공통 번호 박스 (::before)*/
 .sprite::before {
-  content: "";
+  /* content에 li 순서를 넣어준다. */
+  content: counter(number);
   text-align: center;
   display: inline-block;
   width: 16px;
@@ -73,16 +76,3 @@ body {
   color: white;
   font-size: 11px;
 } 
-/* 리스트 각각 숫자 */
-.sprite-1::before {
-  content: "1";
-}
-.sprite-2::before {
-  content: "2";
-}
-.sprite-3::before {
-  content: "3";
-}
-.sprite-4::before {
-  content: "4";
-}
