@@ -10,7 +10,7 @@
 - 제목: &lt;h2&gt; 태그
 - 인기사이트 한 섹션으로 &lt;section&gt; 태그
 - 인기사이트 리스트 : &lt;ul&gt;로 순서가있는 리스트로 정해준다.
-- 더보기는 디자인적으로 맨 위지만, 모든 정보를 준 다음 더보기 링크를 주기위해 맨 밑으로 마크업한다. 
+- '더보기'는 시각적으로 맨 위지만, 모든 정보를 준 다음 '더보기 링크'를 주기위해 맨 밑으로 마크업한다. 
 ```html
 <!DOCTYPE html>
 <html lang="ko">
@@ -56,7 +56,9 @@
 -  각 리스트에서 'background-position'으로 위치를 변경해 아이콘을 바꾼다.
 - &lt;ol&gt;태그의 앞 숫자들은 모두 'list-style-type: none;'으로 지우고 '::before' 로 숫자를 다시 준다.
 - '더보기'는 부모에 'position: relative;'를 주고 'position: absolute;'를 사용해 맨위에 배치했다. 
-
+- &lt;li&gt;에 **'counter-increment: number ;'** 로 &lt;li&gt;의 순서를 기억하게한다.
+- &lt;li&gt;에 '::before'로 **'content: counter(number);'** 로 content에 순서번호를 남겨준다.
+  
 ```css
 /* 시각적으로 잘 볼수있게했다. */
 body {
@@ -104,6 +106,8 @@ body {
 .sprite {
   margin-top: 13px;
   background: url(./rank.png) no-repeat 0 center;
+  /* li의 순서를 기억한다 */
+  counter-increment: number ;
   
 }
 /* 각 list sprite 설정 (background-position)*/
@@ -122,7 +126,8 @@ body {
 
 /* 리스트 앞에 공통 번호 박스 (::before)*/
 .sprite::before {
-  content: "";
+  /* content에 li 순서를 넣어준다. */
+  content: counter(number);
   text-align: center;
   display: inline-block;
   width: 16px;
@@ -133,19 +138,7 @@ body {
   color: white;
   font-size: 11px;
 } 
-/* 리스트 각각 숫자 */
-.sprite-1::before {
-  content: "1";
-}
-.sprite-2::before {
-  content: "2";
-}
-.sprite-3::before {
-  content: "3";
-}
-.sprite-4::before {
-  content: "4";
-}
+
 ```
 
 ### 4. 문법 검사
